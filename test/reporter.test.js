@@ -6,6 +6,7 @@ describe('#jscs-md-reporter', function() {
   var withErrors = [
     {
       _file: {
+        _filename: 'src/mandrill-webhook-authenticator.js',
         _lines: [
           '  var NOT_AUTHORIZED = \'Not Authorized\'',
         ],
@@ -32,16 +33,13 @@ describe('#jscs-md-reporter', function() {
       isEmpty: function() {
         return false;
       },
-
-      getFileName: function() {
-        return 'src/mandrill-webhook-authenticator.js';
-      },
     },
   ];
 
   var withOutErrors = [
     {
       _file: {
+        _filename: 'src/mandrill-webhook-authenticator.js',
         _lines: [
           '  var NOT_AUTHORIZED = \'Not Authorized\';',
         ],

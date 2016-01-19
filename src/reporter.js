@@ -15,7 +15,7 @@ var getContent = function(errorsCollection) {
   errorsCollection.forEach(function(errors) {
     if (!errors.isEmpty()) {
       //File Header
-      content += templates.fileHeader.replace('{file}', errors.getFileName());
+      content += templates.fileHeader.replace('{file}', errors._file._filename);
 
       //Per error
       errors.getErrorList().forEach(function(error) {

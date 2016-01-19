@@ -1,0 +1,28 @@
+{
+  "name": "jscs-md-reporter",
+  "version": "0.1.0",
+  "description": "Simple Markdown reporter for JSCS",
+  "main": "/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha test/**/*.js -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aigeec/jscs-md-reporter.git"
+  },
+  "keywords": [
+    "jscs",
+    "markdown",
+    "reporter"
+  ],
+  "author": "Aigeec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aigeec/jscs-md-reporter/issues"
+  },
+  "homepage": "https://github.com/Aigeec/jscs-md-reporter#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}

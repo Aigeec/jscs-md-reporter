@@ -4,9 +4,15 @@
   "description": "Simple Markdown reporter for JSCS",
   "main": "/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/_mocha test/**/*.js -R spec"
+    "test": "./node_modules/mocha/bin/_mocha test/**/*.js -R markdown > docs/report-test.md",
+    "jscs": "./node_modules/jscs/bin/jscs --reporter ./src/reporter.js src > docs/report-jscs.md",
+    "jshint": "./node_modules/jshint/bin/jshint --reporter ./node_modules/jshint-md-reporter/lib/reporter.js src > docs/report-jshint.md",
+    "setup": "mkdir -p ./docs",
+    "pretest": "npm run setup -s && npm run jscs -s && npm run jshint -s"    
   },
-  "engines" : { "node" : ">=0.10.3" },
+  "engines": {
+    "node": ">=0.10.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aigeec/jscs-md-reporter.git"
@@ -24,6 +30,9 @@
   "homepage": "https://github.com/Aigeec/jscs-md-reporter#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "jscs": "^2.8.0",
+    "jshint": "^2.9.1",
+    "jshint-md-reporter": "^0.1.0",
     "mocha": "^2.3.4"
   }
 }

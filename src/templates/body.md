@@ -1,0 +1,5 @@
+# JSCS Report
+
+{content}
+
+{summary}

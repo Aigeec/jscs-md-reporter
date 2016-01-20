@@ -8,7 +8,7 @@
     "jscs": "./node_modules/jscs/bin/jscs --reporter ./src/reporter.js src > docs/report-jscs.md",
     "jshint": "./node_modules/jshint/bin/jshint --reporter ./node_modules/jshint-md-reporter/lib/reporter.js src > docs/report-jshint.md",
     "setup": "mkdir -p ./docs",
-    "pretest": "npm run setup -s && npm run jscs -s && npm run jshint -s"
+    "doc": "npm run setup -s && npm run jscs -s && npm run jshint -s"
   },
   "engines": {
     "node": ">=0.10.3"

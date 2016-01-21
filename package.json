@@ -1,6 +1,6 @@
 {
   "name": "jscs-md-reporter",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Simple Markdown reporter for JSCS",
   "main": "/index.js",
   "scripts": {

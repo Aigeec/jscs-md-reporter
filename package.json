@@ -31,6 +31,7 @@
   "homepage": "https://github.com/Aigeec/jscs-md-reporter#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "coveralls": "^2.11.6",
     "istanbul": "^0.4.2",
     "jscs": "^2.8.0",
     "jshint": "^2.9.1",

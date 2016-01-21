@@ -46,8 +46,7 @@ describe('#jscs-md-reporter', function() {
         getLines: function() {
           return this._lines;
         },
-      },
-      _errorList:[],
+      },      
       getErrorList: function() {
         return this._errorList;
       },
@@ -96,6 +95,21 @@ describe('#jscs-md-reporter', function() {
 
     it('should display a message saying there are now errors', function() {
       expect(text).to.contain('#### No Errors - w00t!');
+    });
+
+  });
+
+  describe('Normal Operation', function() {
+
+    it('should write to process.stdout.write', function() {
+      var write = process.stdout.write;
+      process.stdout.write = function(text) {
+        expect(text).to.contain('#### No Errors - w00t!');
+      };
+
+      reporter(withOutErrors);
+
+      process.stdout.write = write;
     });
 
   });

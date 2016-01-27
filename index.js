@@ -1,1 +1,1 @@
-module.exports = require('path').join(__dirname, 'src/reporter.js');
+module.exports = require('./src/reporter.js');

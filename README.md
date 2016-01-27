@@ -15,7 +15,7 @@ Has similarities to the [jshint-md-reporter](https://www.npmjs.com/package/jshin
 
 Used as a reporter for [jscs](https://www.npmjs.com/package/jscs)
 
-```$ jscs --reporter node_modules/jscs-md-reporter/src/reporter.js file.js ```
+```$ jscs --reporter node_modules/jscs-md-reporter file.js ```
 
 ## Testing
 
